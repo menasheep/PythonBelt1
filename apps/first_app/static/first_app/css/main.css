@@ -1,0 +1,27 @@
+body {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: pink;
+}
+
+#register {
+    display: inline-block;
+    float: left;
+    border: 2px solid black;
+}
+
+#login {    
+    display: inline-block;
+    float: right;
+    border: 2px solid black;
+}
+
+#header1 {
+    text-align: center;
+    font-family: Courier New, Courier, monospace;
+    font-size: 200%;
+}
+
+#header3 {
+    margin-left: 705px;
+}

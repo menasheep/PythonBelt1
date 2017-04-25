@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration/Login</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'C:\Users\Mal\Desktop\Coding Dojo\Assignments\Python\Projects\Python Belt Exam\TravelBuddy\apps\first_app\static\first_app\css\main.css' %}">
+    </head>
+    <body>
+        <h1 id="header1">Welcome to Travel Buddy!</h1>
+        <pre>
+            <h1>Registration</h1>
+                <form id="register" action="new_user" method="post">
+                    {% csrf_token %}
+                    <!--Registration form-->
+                    Name: 
+                    <input type="text" name="name"><br><br>
+                    Username:
+                    <input type="text" name="username"><br><br>
+                    Password:
+                    <input type="text" name="password"><br><br>
+                    Confirm password:
+                    <input type="text" name="confirm_password"><br><br>
+                    <button type="submit" form="register" value="Submit">Register</button>
+                </form>
+                <br><br>
+        <h1 id="header3">Log In</h1>
+            <form id="login" action="login" method="post">
+                {% csrf_token %}
+                <!--Login form-->
+                Username:
+                <input type="text" name="username"><br><br>
+                Password:
+                <input type="text" name="password"><br><br>
+                <button type="submit" form="login" value="Submit">Login</button>
+            </form>
+        </pre>
+    </body>
+</html>
